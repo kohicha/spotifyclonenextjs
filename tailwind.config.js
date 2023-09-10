@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       colors: {
         fontGray: "#868686",
+        userCardBG2:"#2B2A2F",
         userCardBG: "#181818",
         sLGray: "#B3B3B3",
         sXlGray:"#4D4D4D",
