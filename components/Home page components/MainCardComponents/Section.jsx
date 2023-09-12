@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-export default function Section({SectionTitle, SectionContents, HeaderSize, layoutStyle, nums, isHidden}) {
-  let tags = Array.from({length: `${nums}`}, (i) => i + 1);
+export default function Section({SectionTitle, SectionContents, HeaderSize, layoutStyle, numCards, isHidden}) {
+  let tags = Array.from({length: `${numCards}`}, (i) => i + 1);
   const list = tags.map((tag)=>(
     <div key={tag}>
       {SectionContents}
@@ -17,7 +17,6 @@ export default function Section({SectionTitle, SectionContents, HeaderSize, layo
           Show all
         </Link>
       </div>
-        
         <div className={layoutStyle}>
           {list}
         </div>

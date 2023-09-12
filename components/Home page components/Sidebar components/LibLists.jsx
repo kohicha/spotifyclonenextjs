@@ -2,7 +2,7 @@ import React from 'react'
 
 import Image from 'next/image'
 import avatar from 'public/sampleAvatar.jpg'
-
+import Link from 'next/link'
 export default function LibLists() {
   const tags = Array.from({ length: 50 }).map(
     (_, i, a) => `I miss you ${a.length - i} times` 
@@ -10,7 +10,7 @@ export default function LibLists() {
   return (
     <div className='h-[60vh] rounded-md px-2'>
       {tags.map((tag) => (
-            <button key={tag} className='px-2 py-2 rounded-md flex flex-row justify-start items-center gap-2 bg-sGray hover:bg-sLightGray w-full'>
+            <Link shallow={true} href={'/playlist'} key={tag} className='px-2 py-2 rounded-md flex flex-row justify-start items-center gap-2 bg-sGray hover:bg-sLightGray w-full'>
               <div>
                 <Image
                 src={avatar}
@@ -28,7 +28,7 @@ export default function LibLists() {
                   Playlist • 10pm pasado na playlist
                 </p>
               </div>
-            </button>
+            </Link>
       ))}
       
     </div>

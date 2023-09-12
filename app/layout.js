@@ -1,9 +1,13 @@
+'use client';
+
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 
+import {usePathname} from 'next/navigation'
+import { useState } from 'react';
 import Sidebar from '@/components/Home page components/Sidebar'
 import Player from '@/components/Home page components/Player'
-
+import MainCardNav from '@/components/Home page components/MainCardComponents/MainCardNav'
 const montserrat = Montserrat({ 
   subsets: ['latin'],
 })
@@ -14,13 +18,20 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const [misc, setMisc] = useState(false)
+
   return (
     <html lang="en">
       <body className={montserrat.className}>
       <main className="p-2 bg-black min-h-screen max-h-screen flex flex-col tracking-tight">
       <div className='flex flex-row'>
         <Sidebar/>
-        {children}
+        <div className="bg-sGray rounded-lg w-full">
+          <MainCardNav/>
+          {children}
+        </div>
+        
       </div>
       <div>
         <Player/>

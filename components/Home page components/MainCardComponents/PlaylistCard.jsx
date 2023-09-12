@@ -5,7 +5,7 @@ import {BsFillPlayFill} from "react-icons/bs"
 
 export default function PlaylistCard() {
   return (
-    <Link href={""} className="aspect-[5/7] min-w-[150px] w-48 p-4 flex flex-col gap-4 rounded-md 
+    <Link shallow={true} href={"/playlist"} className="aspect-[5/7] min-w-[150px] w-48 p-4 flex flex-col gap-4 rounded-md 
     bg-sXlGray bg-opacity-10 hover:bg-opacity-40
     group transition-all ease-in-out duration-300
 

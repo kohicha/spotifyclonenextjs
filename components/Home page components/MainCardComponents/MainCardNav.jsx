@@ -1,18 +1,21 @@
-import {AiFillRightCircle} from 'react-icons/ai'
-import {AiFillLeftCircle} from 'react-icons/ai'
+"use client"
+
+import {AiOutlineLeft} from 'react-icons/ai'
+import {AiOutlineRight} from 'react-icons/ai'
 import {BsArrowDownCircle} from 'react-icons/bs'
 import Image from 'next/image'
 import avatar from 'public/sampleAvatar.jpg'
+import Router from 'next/router'
 export default function MainCardNav() {
   return (
-    <div className="sticky rounded-t-lg bg-sLGray text-sLightGray w-full flex flex-row justify-between px-6 py-4">
-        <div className='flex flex-row text-4xl'>
-            <button>
-                <AiFillLeftCircle/>
-            </button>
-            <button>
-                <AiFillRightCircle/>
-            </button>
+    <div className="sticky rounded-t-lg  text-sLightGray w-full flex flex-row justify-between px-6 py-4">
+        <div className='flex flex-row text-xl gap-2'>
+            <div className='bg-sLightGray w-8 h-8 grid place-items-center text-white rounded-full' onClick={()=> Router.back()}> 
+                <AiOutlineLeft/>
+            </div>
+            <div className='bg-sLightGray w-8 h-8 grid place-items-center text-white rounded-full' onClick={()=> Router.forward()}>
+                <AiOutlineRight/>
+            </div>
         </div>
         <div className='flex flex-row font-bold text-sm gap-2'>
             <button className='bg-white px-4 rounded-full'>
