@@ -3,8 +3,6 @@
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 
-import {usePathname} from 'next/navigation'
-import { useState } from 'react';
 import Sidebar from '@/components/Home page components/Sidebar'
 import Player from '@/components/Home page components/Player'
 import MainCardNav from '@/components/Home page components/MainCardComponents/MainCardNav'
@@ -18,8 +16,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-  const [misc, setMisc] = useState(false)
 
   return (
     <html lang="en">
