@@ -5,7 +5,7 @@ import {BsFillPlayFill} from "react-icons/bs"
 
 export default function UserCards() {
   return (
-    <Link shallow={true} href={"/playlist"} className="max-w-xl min-w-[13rem]rounded-sm flex flex-row items-center justify-between pr-4
+    <Link shallow={true} href={"/playlist"} className="max-w-xl min-w-[13rem] rounded-sm flex flex-row items-center justify-between pr-4
     bg-sXlGray bg-opacity-10 hover:bg-opacity-40
     group transition-all ease-in-out duration-300 
 

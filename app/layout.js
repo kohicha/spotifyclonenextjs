@@ -9,7 +9,8 @@ import MainCardNav from '@/components/Home page components/MainCardComponents/Ma
 const montserrat = Montserrat({ 
   subsets: ['latin'],
 })
-
+import { Suspense } from 'react'
+import Loading from './loading'
 export const metadata = {
   title: 'Spotify Clone by Kohi',
   description: 'Kohi prod.',
@@ -25,8 +26,10 @@ export default function RootLayout({ children }) {
         <Sidebar/>
         <div className="bg-sGray rounded-lg w-full">
           <MainCardNav/>
-          
-            {children}
+            <Suspense fallback={<Loading/>}>
+             {children}
+            </Suspense>
+            
         </div>
         
       </div>

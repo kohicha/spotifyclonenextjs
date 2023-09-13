@@ -1,5 +1,9 @@
+import { Skeleton } from "@/components/ui/skeleton"
+
 export default function usercardskeleton() {
   return (
-    <div>usercardskeleton</div>
+    <>
+        <Skeleton className="min-w-[13rem] rounded-sm max-w-xl bg-sGray"/>
+    </>
   )
 }
