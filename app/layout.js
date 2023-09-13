@@ -29,7 +29,8 @@ export default function RootLayout({ children }) {
         <Sidebar/>
         <div className="bg-sGray rounded-lg w-full">
           <MainCardNav/>
-          {children}
+          
+            {children}
         </div>
         
       </div>
