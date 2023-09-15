@@ -8,7 +8,7 @@ import avatar from 'public/sampleAvatar.jpg'
 import Router from 'next/router'
 export default function MainCardNav() {
   return (
-    <div className="sticky rounded-t-lg  text-sLightGray w-full flex flex-row justify-between px-6 py-4">
+    <div className="bg-transparent rounded-t-lg z-10 text-sLightGray w-full flex flex-row justify-between px-6 py-4">
         <div className='flex flex-row text-xl gap-2'>
             <div className='bg-sLightGray w-8 h-8 grid place-items-center text-white rounded-full' onClick={()=> Router.back()}> 
                 <AiOutlineLeft/>
