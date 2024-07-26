@@ -15,3 +15,5 @@ npm run dev
 I am currently having some trouble running nextjs on my computer even after some modifications on the program and the libraries, so this project will be set on hold, and I'll switch back to react.js just to further understand the fundamentals of the react hooks. 
 
 Next.js was my first framework and I loved it very much. I'll return.
+
+I infact did not return, will do other projects soon.
